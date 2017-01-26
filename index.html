@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>a/c App</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div id="left">
+    <h2>Enter Data:</h2>
+    <table border=0>
+      <tr>
+        <td>Gross income:</td>
+        <td><input type="number" placeholder="00.00" id="gincome"/>€</td>
+      </tr>
+      <tr>
+        <td>Standard rate cut off point:</td>
+        <td><input type="number" placeholder="00.00" id="scutoff"/>€</td>
+      </tr>
+      <tr>
+        <td>Standard rate of tax:</td>
+        <td><input type="number" id="srate" placeholder="00.00"/>%</td>
+      </tr>
+      <tr>
+        <td>Higher rate tax:</td>
+        <td><input type="number" id="hrate" placeholder="00.00"/>%</td>
+      </tr>
+      <tr>
+        <td>Tax credits: </td>
+        <td><input type="number" placeholder="00.00" id="tcredits"/>€</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button onclick="calc()">Calculate</button><button onclick="reset()">Reset</button><td>
+      </tr>
+    </table>
+  </div>
+  <div id="right">
+    <h2>Results: </h2>
+    <table border=0>
+      <tr>
+        <td>Gross tax: </td>
+        <td>€<span id="gtax">00.00</span></td>
+      </tr>
+      <tr>
+        <td>Net tax: </td>
+        <td>€<span id="ntax">00.00</span></td>
+      </tr>
+      <tr>
+        <td>Net income: </td>
+        <td>€<span id="nincome">00.00</span></td>
+      </tr>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
