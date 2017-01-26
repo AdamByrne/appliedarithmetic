@@ -1,0 +1,10 @@
+#left {
+  float:left;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+#right {
+  float:right;
+  margin-right: 10%;
+  margin-top: 10%;
+}
